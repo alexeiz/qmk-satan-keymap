@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,-----------------------------------------------------------.
    * | ~ | F1|F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|       |
    * |-----------------------------------------------------------|
-   * |     |  |  |End|  |  |   |   |PgUp|   | Up |Sclk|Paus| DEL |
+   * |     |  |  |End|  |  |   |PgUp|   |   | Up |Sclk|Paus| DEL |
    * |-----------------------------------------------------------|
    * | CAPS |Home|  |PgDn|  |  |Left|Dwn|Up |Rgt|Ins |   |       |
    * |-----------------------------------------------------------|
@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
 [_FL] = KEYMAP_ANSI(
   KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_TRNS, \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_END,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_PGUP, KC_TRNS, KC_UP,   KC_SLCK, KC_PAUS, KC_DEL,  \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_END,  KC_TRNS, KC_TRNS, KC_TRNS, KC_PGUP, KC_TRNS, KC_TRNS, KC_UP,   KC_SLCK, KC_PAUS, KC_DEL,  \
   KC_CAPS, KC_HOME, KC_TRNS, KC_PGDN, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT, KC_INS,  KC_TRNS,          KC_TRNS, \
   KC_TRNS, KC_VOLD, KC_VOLU, KC_TRNS, KC_TRNS, KC_TRNS, KC_DOWN, KC_TRNS,  KC_TRNS, KC_TRNS, KC_PSCR,                   KC_TRNS, \
   KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                             KC_TRNS, KC_APP,  KC_TRNS, KC_TRNS),
